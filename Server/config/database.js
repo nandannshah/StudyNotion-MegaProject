@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-exports.dbConnect = () => {
+exports.connect = () => {
     mongoose.connect({})
     .then(()=> {console.log("DB connected successfully")})
     .catch((error)=>{
